@@ -1,0 +1,146 @@
+#class Animal:
+    #species = "Unknown"
+   # age = 0
+    #weight = 0.0
+
+   # def info(self):
+       # print(f"Species: {self.species}, Age: {self.age}, Weight: {self.weight} kg")
+
+#class Dog(Animal):
+   # species = "Dog"
+    #breed = "Unknown"
+
+   # def info(self):
+       # print(f"Species: {self.species}, Breed: {self.breed}, Age: {self.age}, Weight: {self.weight} kg")
+
+#class Cat(Animal):
+    #species = "Cat"
+    #color = "Unknown"
+
+    #def info(self):
+       # print(f"Species: {self.species}, Color: {self.color}, Age: {self.age}, Weight: {self.weight} kg")
+
+#d = Dog()
+#d.age = 5
+#d.weight = 20.5
+#d.breed = "Labrador"
+
+#d.info()
+
+#c = Cat()
+#c.age = 3
+#c.weight = 4.2
+#c.color = "Black"
+
+#c.info()
+
+
+
+
+
+
+# class Person:
+#     def __init__(self):
+#         self.name = "Evgen"
+#         self.age = 20
+#         self.height = 180
+#         self.__weight = 70
+
+#     def info(self):
+#         print(f"Name: {self.name}, Age: {self.age}, Height: {self.height}, Weight: {self.__weight}")
+
+#     def __inform(self):
+#         pass
+
+
+# class Student(Person):
+#     def __init__(self):
+#         super().__init__()
+#         self.name = "Maks"
+#         self.progress = 10
+
+#     def info(self):
+#         super().info()
+#         print(f"Name: {self.name}, Progress: {self.height}")
+
+# class Teacher(Person):
+#     def __init__(self):
+#         super().__init__()
+#         self.age = 35
+    
+
+
+# s = Student()
+# t = Teacher()
+
+# s.info()
+# t.info()
+
+
+
+# class Grandparent:
+#     def info(self):
+#         print("i'm grandparent")
+
+# class Parent(Grandparent):
+#     def info(self):
+#         print("i'm parent")
+
+# class Child(Parent):
+#     def __init__(self):
+#         super().info()
+
+
+
+
+
+
+# class Vehicle: 
+#     def __init__(self, speed: int, fuel: int): 
+#         self.__speed = speed  
+#         self.__fuel = fuel    
+ 
+#     def drive(self, distance: int): 
+#         fuel_needed = (self.__speed / 10) * distance 
+#         if self.__fuel >= fuel_needed: 
+#             self.__fuel -= fuel_needed 
+#             print(f"Пройдено {distance} км. Залишок палива: {self.__fuel:.2f} літрів.") 
+#         else: 
+#             print("Недостатньо палива для поїздки.") 
+ 
+#     def get_fuel(self): 
+#         return self.__fuel 
+ 
+#     def get_speed(self): 
+#         return self.__speed 
+ 
+ 
+# class Car(Vehicle): 
+#     def __init__(self, speed: int, fuel: int, number_of_doors: int): 
+#         super().__init__(speed, fuel) 
+#         self.__numberOfDoors = number_of_doors  
+#     def openDoor(self): 
+#         print("Двері відкриті") 
+ 
+ 
+# class Bicycle(Vehicle): 
+#     def __init__(self, speed: int, type_of_brakes: str): 
+#         super().__init__(speed, fuel=0)  
+#         self.__typeOfBrakes = type_of_brakes  
+#     def ringBell(self): 
+#         print("Дзвенить дзвінок!") 
+ 
+ 
+
+# car = Car(speed=60, fuel=50, number_of_doors=4) 
+# car.openDoor() 
+# car.drive(5) 
+ 
+# bicycle = Bicycle(speed=20, type_of_brakes="дискові") 
+# bicycle.ringBell() 
+# bicycle.drive(2)
+
+
+
+
+
