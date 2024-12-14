@@ -141,6 +141,46 @@
 # bicycle.drive(2)
 
 
-
+class Employee: 
+    def __init__(self, name, salary): 
+        self.name = name 
+        self.salary = salary 
+ 
+    def describe(self): 
+        print(f"Ім'я: {self.name}, Зарплата: {self.salary}") 
+ 
+ 
+ 
+class Manager(Employee): 
+    def __init__(self, name, salary, department): 
+        super().__init__(name, salary) 
+        self.department = department 
+ 
+    def describe(self): 
+        print(f"Ім'я: {self.name}, Зарплата: {self.salary}, Відділ: {self.department}") 
+ 
+ 
+ 
+class Developer(Employee): 
+    def __init__(self, name, salary, programming_language): 
+        super().__init__(name, salary) 
+        self.programming_language = programming_language 
+ 
+    def describe(self): 
+        print(f"Ім'я: {self.name}, Зарплата: {self.salary}, Мова програмування: {self.programming_language}") 
+ 
+ 
+ 
+manager1 = Manager("Олександр", 50000, "Маркетинг") 
+manager2 = Manager("Кирило", 60000, "Продажі") 
+ 
+developer1 = Developer("Андрій", 70000, "Python") 
+developer2 = Developer("Чуб", 75000, "JavaScript") 
+ 
+ 
+manager1.describe() 
+manager2.describe() 
+developer1.describe() 
+developer2.describe()
 
 
